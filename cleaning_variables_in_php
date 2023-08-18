@@ -1,0 +1,26 @@
+
+$title = $_POST['title'];
+$time = $_POST['time'];
+
+ $detail = $_POST['detail'];
+ $required = $_POST['required'];
+
+ $extra_information = $_POST['extra_information'];
+
+
+$importance = $_POST['importance'];
+$importance = implode(" ", $importance);
+
+$short_long = $_POST['short_long'];
+$short_long = implode(" ", $short_long);
+ 
+ 
+ 
+ 
+ $clean_title = preg_replace('/[^A-Za-z0-9\-]/', '', $title);
+  $clean_detail = preg_replace('/[^A-Za-z0-9\-]/', '', $detail);
+ $clean_required = preg_replace('/[^A-Za-z0-9\-]/', '', $required);
+ $clean_extra_information = preg_replace('/[^A-Za-z0-9\-]/', '', $extra_information);
+
+ 
+ 
